@@ -1,0 +1,10 @@
+R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\bin\Release\DCartRestAPIClient.dll.config
+R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\bin\Release\DCartRestAPIClient.dll
+R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\bin\Release\DCartRestAPIClient.pdb
+R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\bin\Release\Newtonsoft.Json.dll
+R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\bin\Release\System.Net.Http.Formatting.dll
+R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\bin\Release\Newtonsoft.Json.xml
+R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\bin\Release\System.Net.Http.Formatting.xml
+R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\obj\Release\3dCartRestAPIClient.csprojResolveAssemblyReference.cache
+R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\obj\Release\DCartRestAPIClient.dll
+R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\obj\Release\DCartRestAPIClient.pdb

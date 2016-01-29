@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repositories>
+  <repository path="..\3dCartRestAPIClient\packages.config" />
+  <repository path="..\DCartAPIClient\packages.config" />
+  <repository path="..\RestAPIClientInterface\packages.config" />
+</repositories>

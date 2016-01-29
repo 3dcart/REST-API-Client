@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3dCartRestAPIClient", "3dCartRestAPIClient\3dCartRestAPIClient.csproj", "{C2C92607-5CA5-42F1-A6F0-1CAA315D3D2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestAPIClientInterface", "RestAPIClientInterface\RestAPIClientInterface.csproj", "{B020609A-C7B8-4EF7-B7B8-1B985BD78B52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCartAPIClient", "DCartAPIClient\DCartAPIClient.csproj", "{5051C97A-F312-419D-B55B-C093548A56DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F50120EA-7793-4E30-B054-E32ECB93283B}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://3dcartsrv010:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = 3dCartRestAPIClient\\3dCartRestAPIClient.csproj
+		SccProjectName1 = 3dCartRestAPIClient
+		SccLocalPath1 = 3dCartRestAPIClient
+		SccProjectUniqueName2 = RestAPIClientInterface\\RestAPIClientInterface.csproj
+		SccProjectName2 = RestAPIClientInterface
+		SccLocalPath2 = RestAPIClientInterface
+		SccProjectUniqueName3 = DCartAPIClient\\DCartAPIClient.csproj
+		SccProjectName3 = DCartAPIClient
+		SccLocalPath3 = DCartAPIClient
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2C92607-5CA5-42F1-A6F0-1CAA315D3D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2C92607-5CA5-42F1-A6F0-1CAA315D3D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2C92607-5CA5-42F1-A6F0-1CAA315D3D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2C92607-5CA5-42F1-A6F0-1CAA315D3D2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B020609A-C7B8-4EF7-B7B8-1B985BD78B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B020609A-C7B8-4EF7-B7B8-1B985BD78B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B020609A-C7B8-4EF7-B7B8-1B985BD78B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B020609A-C7B8-4EF7-B7B8-1B985BD78B52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5051C97A-F312-419D-B55B-C093548A56DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5051C97A-F312-419D-B55B-C093548A56DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5051C97A-F312-419D-B55B-C093548A56DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5051C97A-F312-419D-B55B-C093548A56DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

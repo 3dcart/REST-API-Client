@@ -1,0 +1,117 @@
+﻿@{
+    PageData["title"] = "Customer API";
+}
+<h2>Customer API</h2>
+<p>&nbsp; </p>
+
+<div class="row" ng-controller="CustomerAPI">
+   
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group form-inline">
+                <label for="CustomerID">Get Customer: </label> <br />
+                <input type="text" class="form-control" style="width:190px" id="CustomerID" placeholder="Enter Customer ID" ng-model="getID" ng-keypress="keyEnter($event)">
+                <button type="button" class="btn btn-info" ng-click="getAPI()">Submit</button> 
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group form-inline">
+
+                <label for="CustomerID">Update Customer: </label> <br />
+                <input type="text" class="form-control" style="width:190px" id="CustomerID" placeholder="Enter Customer ID" ng-model="updateID" ng-keypress="keyEnter($event)">
+                <button type="button" class="btn btn-info" ng-click="updateAPI(updateID)">Submit</button>
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group form-inline">
+
+                <label for="CustomerID">Add Customer: </label> <br />
+                <button type="button" class="btn btn-info" ng-click="updateAPI(0)">Add Record</button>
+
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="form-group form-inline">
+
+                <label for="CustomerID">Delete Customer: </label> <br />
+                <input type="text" class="form-control" style="width:190px" id="CustomerID" placeholder="Enter Customer ID" ng-model="deleteID" ng-keypress="keyEnter($event)">
+                <button type="button" class="btn btn-danger" ng-click="deleteAPI()">Submit</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div ng-show="action ==='G'">
+        <table class="table-responsive table table-striped table-bordered table-hover ">
+            <thead>
+                <tr ng-show="!details[0]">
+                    <td colspan="7">  {{Message}}</td>
+                </tr>
+                <tr ng-show="details[0]">
+                    <th class="col-xs-1">ID</th>
+                    <th class="col-xs-2">First</th>
+                    <th class="col-xs-2">Last</th>
+                    <th class="col-xs-2">Email</th>
+                    <th class="col-xs-2">Phone</th>
+                    <th class="col-xs-2">Location</th>
+                    <th class="col-xs-1">ZipCode</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat-start="u in details" >
+                    <td class="col-xs-1">{{u.CustomerID}}</td>
+                    <td class="col-xs-2 cap">{{u.BillingFirstName}}</td>
+                    <td class="col-xs-2 cap">{{u.BillingLastName}}</td>
+                    <td class="col-xs-2 strong">{{u.Email}}</td>
+                    <td class="col-xs-2">{{u.ShippingPhoneNumber}}</td>
+                    <td class="col-xs-2">{{u.ShippingState}}</td>
+                    <td class="col-xs-1">{{u.BillingZipCode}}</td>
+                </tr>
+                <tr ng-repeat-end="" ></tr>
+            </tbody>
+        </table>
+
+    </div><!--/row-->
+    <br /><br />
+    <div ng-show="action ==='U'">
+        <table class="table-responsive table table-striped table-bordered table-hover ">
+            <thead>
+                <tr ng-show="!details[0]">
+                    <td colspan="7">  {{Message}}</td>
+                </tr>
+                <tr ng-show="details[0]">
+                    <th class="col-xs-1" ng-show="details[0].CustomerID>0">ID</th>
+                    <th class="col-xs-2">First</th>
+                    <th class="col-xs-2">Last</th>
+                    <th class="col-xs-2">Email</th>
+                    <th class="col-xs-2">Phone</th>
+                    <th class="col-xs-1">Location</th>
+                    <th class="col-xs-1">ZipCode</th>
+                    <th class="col-xs-1">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat-start="u in details">
+                    <td class="col-xs-1" ng-show="u.CustomerID>0">{{u.CustomerID}} </td>
+                    <td class="col-xs-2 cap"><input type="text" class="form-control" ng-model="u.BillingFirstName"></td>
+                    <td class="col-xs-2 cap"><input type="text" class="form-control" ng-model="u.BillingLastName"></td>
+                    <td class="col-xs-2 strong"><input type="text" class="form-control" ng-model="u.Email"></td>
+                    <td class="col-xs-2"><input type="text" class="form-control" ng-model="u.ShippingPhoneNumber"></td>
+                    <td class="col-xs-1"><input type="text" class="form-control" ng-model="u.ShippingState"></td>
+                    <td class="col-xs-1"><input type="text" class="form-control" ng-model="u.BillingZipCode"></td>
+                    <td class="col-xs-1"><button type="button" class="btn btn-success" ng-click="saveAPI(u.CustomerID)">Save</button> </td>
+
+                </tr>
+                <tr ng-repeat-end=""></tr>
+            </tbody>
+        </table>
+
+    </div><!--/row-->
+    <br /><br />
+    <div ng-show="action ==='D'">
+        {{details}}
+    </div>
+</div>
