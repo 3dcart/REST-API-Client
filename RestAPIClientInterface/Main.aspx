@@ -239,6 +239,7 @@ th {
                 $("#dv" + restAPIName + "Get").show();
                 $("#dv" + restAPIName + "Controls").hide();
                 $("#dv" + restAPIName + "Add").hide();
+                $("#dv" + restAPIName + "ControlsAdd").hide();
                 $("#dv" + restAPIName + "Update").hide();
                 $("#dv" + restAPIName + "DEL").hide();
                 $("#dv" + restAPIName + "ID input").val('');
@@ -280,6 +281,7 @@ th {
                 $("#dv" + restAPIName + "ID").show();
                 $("#dv" + restAPIName + "Get").hide();
                 $("#dv" + restAPIName + "Controls").hide();
+                $("#dv" + restAPIName + "ControlsAdd").hide();
                 $("#dv" + restAPIName + "Add").hide();
                 $("#dv" + restAPIName + "Update").hide();
                 $("#dv" + restAPIName + "DEL").show();
@@ -998,7 +1000,7 @@ th {
             <div id="dvCustomersControls" style="display:none">
                 <table>
                     <tr>
-                        <td style="width: 50%">Bill Company:</td> 
+                        <td style="width: 50%">Billing Company:</td> 
                         <td style="width: 50%"><input type="text" id="txtBillCompany" style="width: 100px" /> </td>
                     </tr>
                     <tr>
@@ -1479,12 +1481,49 @@ th {
                 </table>
 
                 !-->
-                <span>Due to complexity of order object, we may end up providing too many controls to collect the order information. To resolve this we have provided a JSON to create
-                    an order. You can edit JSON according to your requirements to make changes to the order. 
-                    <br />
+                <span><br />
+                    Due to the complexity of the order object, it is not possible to provide one sample JSON object that will work in all stores. 
+                    The JSON object below contains sample values that would need to be changed in order to match the values in your store's database. 
+                    Below is a list of values that must match: 
+                    <br /><br />
                     For ADD, Invoice Number and OrderID doesn't need to be specified in JSON.
                     <br />
                     For UPDATE, OrderID needs to be specified in OrderID text box and in JSON.
+                    <br /><br />
+                    'Required fields for Order<br />
+                    'Billing Information<br />
+                    <br />
+                    Billing First Name<br />
+                    Billing Last Name<br />
+                    Billing Address<br />
+                    Billing City<br />
+                    Billing Country<br />
+                    Billing Phone Number<br />
+                    <br />
+                    'For Amazon Import<br />
+                    Billing State<br />
+                    Billing ZipCode<br />
+                    <br />
+                    'ShipmentList should have at least one Shipment<br /> 
+                    'For Non Amazon Import<br />
+                    Shipment First Name<br />
+                    Shipment Last Name<br />
+                    Shipment Address<br />
+                    Shipment City<br />
+                    Shipment Country<br />
+                    Shipment Phone<br />
+                    <br />
+                    'If Shipment Country is US<br />
+                    Shipment State<br />
+                    Shipment ZipCode<br />
+                    <br />
+                    An Order should have a valid Customer and Customer should have an email.<br />
+                    OrderItemList should have at least one item.<br />
+                    An OrderItem should have a valild CatalogID.<br />
+                    TransactionList is not required. However, if there is a TransactionList, TransactionGatewayID should be valid.<br />
+                    QuestionList is not required. However, if there is a QuestionList, QuestionID should be valid.<br />
+                    OrderStatusID should be valid.<br />
+                    There should be a valid Online/Offline payment method ID on the Order.<br /><br />
                 </span>
                 <textarea id="txtOrderJson" cols="200" rows="40">
 {

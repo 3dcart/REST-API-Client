@@ -10,25 +10,25 @@ by editing this MSBuild file. In order to learn more about this please visit htt
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/DCartRestAPIClient.dll">
-      <publishTime>01/28/2016 10:30:23</publishTime>
+      <publishTime>02/01/2016 13:00:03</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>01/19/2016 15:21:48</publishTime>
     </File>
     <File Include="bin/RestAPIClientInterface.dll">
-      <publishTime>01/28/2016 10:30:25</publishTime>
+      <publishTime>02/01/2016 13:00:05</publishTime>
     </File>
     <File Include="bin/System.Net.Http.Formatting.dll">
       <publishTime>01/19/2016 15:21:42</publishTime>
     </File>
     <File Include="Main.aspx">
-      <publishTime>01/27/2016 18:53:51</publishTime>
+      <publishTime>02/01/2016 12:56:08</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>01/19/2016 15:21:52</publishTime>
+      <publishTime>02/01/2016 12:56:08</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>01/19/2016 17:29:24</publishTime>
+      <publishTime>02/01/2016 13:00:06</publishTime>
     </File>
   </ItemGroup>
 </Project>

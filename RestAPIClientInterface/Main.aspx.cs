@@ -40,7 +40,6 @@ namespace RestAPIClientInterface
 
             restAPIClientWM.Type = RestAPIType;
 
-
             RecordInfo addInfo = restAPIClientWM.AddRecord(RestAPIObject);
 
             string sIDPrefix = RestAPIType.Substring(0, RestAPIType.Length - 1) ;
@@ -64,6 +63,7 @@ namespace RestAPIClientInterface
         public static string UpdateRecord(Object RestAPIObject, string RestAPIType, string RestAPIUpdateID, string PrivateKey, string Token, string SecureURL)
         {
 
+            
             RestAPIActions restAPIClientWM = GetRestAPIClient(PrivateKey, Token, SecureURL);
 
 
@@ -173,22 +173,7 @@ namespace RestAPIClientInterface
                 try
                 {
                     List<Object> reclist = (List<Object>)recInf.ResultSet;
-
-                    restAPIClientStream += "[";
-
-                    foreach (Object record in reclist)
-                    {
-                        string receiveStream = record.ToString();
-
-                        restAPIClientStream += record.ToString() + ",";
-
-                    }
-
-                    restAPIClientStream = restAPIClientStream.TrimEnd(',');
-
-                    restAPIClientStream += "]";
-
-
+                    restAPIClientStream = Newtonsoft.Json.JsonConvert.SerializeObject(reclist);
                 }
                 catch (Exception ex)
                 {
@@ -198,6 +183,19 @@ namespace RestAPIClientInterface
             }
 
             return restAPIClientStream;
+
+        }
+
+        public static void Logger(String lines)
+        {
+
+            // Write the string to a file.append mode is enabled so that the log
+            // lines get appended to  test.txt than wiping content and writing the log
+
+            System.IO.StreamWriter file = new System.IO.StreamWriter("c:\\temp\test.txt", true);
+            file.WriteLine(lines);
+
+            file.Close();
 
         }
 

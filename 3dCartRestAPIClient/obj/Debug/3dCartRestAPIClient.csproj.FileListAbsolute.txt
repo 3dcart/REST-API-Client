@@ -5,5 +5,6 @@ R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\bin
 R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\bin\Debug\System.Net.Http.Formatting.dll
 R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\bin\Debug\Newtonsoft.Json.xml
 R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\bin\Debug\System.Net.Http.Formatting.xml
+R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\obj\Debug\3dCartRestAPIClient.csprojResolveAssemblyReference.cache
 R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\obj\Debug\DCartRestAPIClient.dll
 R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\3dCartRestAPIClient\obj\Debug\DCartRestAPIClient.pdb
