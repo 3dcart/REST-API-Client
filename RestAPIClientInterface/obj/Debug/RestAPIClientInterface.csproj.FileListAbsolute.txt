@@ -10,3 +10,15 @@ R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\RestAPIClientInterface\
 R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\RestAPIClientInterface\obj\Debug\RestAPIClientInterface.csprojResolveAssemblyReference.cache
 R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\RestAPIClientInterface\obj\Debug\RestAPIClientInterface.dll
 R:\3dcartProjects\Nadeem\3dcartWebAPI\3dCartWebAPIClient\RestAPIClientInterface\obj\Debug\RestAPIClientInterface.pdb
+C:\Users\nkhalid\Documents\GitHub\REST-API-Client\RestAPIClientInterface\bin\RestAPIClientInterface.dll.config
+C:\Users\nkhalid\Documents\GitHub\REST-API-Client\RestAPIClientInterface\bin\RestAPIClientInterface.dll
+C:\Users\nkhalid\Documents\GitHub\REST-API-Client\RestAPIClientInterface\bin\RestAPIClientInterface.pdb
+C:\Users\nkhalid\Documents\GitHub\REST-API-Client\RestAPIClientInterface\bin\DCartRestAPIClient.dll
+C:\Users\nkhalid\Documents\GitHub\REST-API-Client\RestAPIClientInterface\bin\Newtonsoft.Json.dll
+C:\Users\nkhalid\Documents\GitHub\REST-API-Client\RestAPIClientInterface\bin\System.Net.Http.Formatting.dll
+C:\Users\nkhalid\Documents\GitHub\REST-API-Client\RestAPIClientInterface\bin\DCartRestAPIClient.pdb
+C:\Users\nkhalid\Documents\GitHub\REST-API-Client\RestAPIClientInterface\bin\Newtonsoft.Json.xml
+C:\Users\nkhalid\Documents\GitHub\REST-API-Client\RestAPIClientInterface\bin\System.Net.Http.Formatting.xml
+C:\Users\nkhalid\Documents\GitHub\REST-API-Client\RestAPIClientInterface\obj\Debug\RestAPIClientInterface.csprojResolveAssemblyReference.cache
+C:\Users\nkhalid\Documents\GitHub\REST-API-Client\RestAPIClientInterface\obj\Debug\RestAPIClientInterface.dll
+C:\Users\nkhalid\Documents\GitHub\REST-API-Client\RestAPIClientInterface\obj\Debug\RestAPIClientInterface.pdb
