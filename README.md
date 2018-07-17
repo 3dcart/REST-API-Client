@@ -1,11 +1,11 @@
 <b><font size="6">3dCart Rest API OAuth Client</font></b>
 <br><br>
-Our latest SDK includes our OAuth 2 examples.
+Our latest SDK 3DCart.Core includes our OAuth 2 implementation.
 
 To generate the authorize URL, use this code:
 
-ThreeDCartOAuthProvider authProvider = new ThreeDCartOAuthProvider();
-string url = authProvider.GetAuthorizeUrl(clientId, redirectUrl, secureUrl);
+	ThreeDCartOAuthProvider authProvider = new ThreeDCartOAuthProvider();
+	string url = authProvider.GetAuthorizeUrl(clientId, redirectUrl, secureUrl);
 					
 Once you receive the authorization code, you may obtain an access token:
 					
