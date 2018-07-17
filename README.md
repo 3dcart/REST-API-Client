@@ -1,10 +1,42 @@
+<b><font size="6">3dCart Rest API OAuth Client</font></b>
+<br><br>
+Our latest SDK 3DCart.Core includes our OAuth 2 implementation.
 
+To generate the authorize URL, use this code:
+
+	ThreeDCartOAuthProvider authProvider = new ThreeDCartOAuthProvider();
+	string url = authProvider.GetAuthorizeUrl(clientId, redirectUrl, secureUrl);
+					
+Once you receive the authorization code, you may obtain an access token:
+					
+	public ActionResult ThreeDCartAuthCallBack(string code)
+	{
+		string clientId = "Enter client Id";
+		string clientSecret = "Enter client secret";
+		string redirectUrl = "Enter redirect Url";
+
+		ThreeDCartOAuthProvider authProvider = new ThreeDCartOAuthProvider();
+
+		ThreeDCartAuth auth = authProvider.GetAccessToken(redirectUrl, clientId, code, clientSecret);
+	}
+
+To call the API, use this code:
+		
+	string clientId = "Enter client Id";
+	string clientSecret = "Enter client secret";
+	string secureUrl = "Enter secure Url";
+
+	ThreeDCartProvider provider = new ThreeDCartProvider(clientSecret, password, secureUrl);
+	provider.SearchOrders(DateTime.Now.AddDays(-1), DateTime.Now, "New");
+
+<br><br>
 <b><font size="6">3dCart Rest API Client</font></b>
 <br><br>
 The 3DCart REST API can be used to retrieve data and/or make changes to a clients store. The information regarding the 3dCart REST API can be found at the link below:
 <br><br>
 https://apirest.3dcart.com/
 <br><br>
+
 3dCart Rest API Client for C# is a project that explains how to use the 3dCart Rest API. The purpose of this project is to provide an example to 3dCart clients for how one might use 3dCart Rest API in their custom applications.
 <br><br>
 This 3dCart Rest API Client is a C# solution that has two projects
