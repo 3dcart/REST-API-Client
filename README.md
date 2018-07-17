@@ -4,30 +4,30 @@ Our latest SDK includes our OAuth 2 examples.
 
 To generate the authorize URL, use this code:
 
-                    ThreeDCartOAuthProvider authProvider = new ThreeDCartOAuthProvider();
-                    string url = authProvider.GetAuthorizeUrl(clientId, redirectUrl, secureUrl);
+ThreeDCartOAuthProvider authProvider = new ThreeDCartOAuthProvider();
+string url = authProvider.GetAuthorizeUrl(clientId, redirectUrl, secureUrl);
 					
-					Once you receive the authorization code, you may obtain an access token:
+Once you receive the authorization code, you may obtain an access token:
 					
-		public ActionResult ThreeDCartAuthCallBack(string code)
-        {
-            string clientId = "Enter client Id";
-            string clientSecret = "Enter client secret";
-            string redirectUrl = "Enter redirect Url";
+public ActionResult ThreeDCartAuthCallBack(string code)
+{
+	string clientId = "Enter client Id";
+    string clientSecret = "Enter client secret";
+    string redirectUrl = "Enter redirect Url";
 
-            ThreeDCartOAuthProvider authProvider = new ThreeDCartOAuthProvider();
+    ThreeDCartOAuthProvider authProvider = new ThreeDCartOAuthProvider();
 
-            ThreeDCartAuth auth = authProvider.GetAccessToken(redirectUrl, clientId, code, clientSecret);
-        }
+    ThreeDCartAuth auth = authProvider.GetAccessToken(redirectUrl, clientId, code, clientSecret);
+}
 
-		To call the API, use this code:
+To call the API, use this code:
 		
-		    string clientId = "Enter client Id";
-            string clientSecret = "Enter client secret";
-            string secureUrl = "Enter secure Url";
+string clientId = "Enter client Id";
+string clientSecret = "Enter client secret";
+string secureUrl = "Enter secure Url";
 
-            provider = new ThreeDCartProvider(clientSecret, password, secureUrl);
-			provider.SearchOrders(DateTime.Now.AddDays(-1), DateTime.Now, "New");
+ThreeDCartProvider provider = new ThreeDCartProvider(clientSecret, password, secureUrl);
+provider.SearchOrders(DateTime.Now.AddDays(-1), DateTime.Now, "New");
 
 <br><br>
 <b><font size="6">3dCart Rest API Client</font></b>
