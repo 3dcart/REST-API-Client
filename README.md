@@ -22,11 +22,11 @@ Once you receive the authorization code, you may obtain an access token:
 
 To call the API, use this code:
 		
-	string clientId = "Enter client Id";
-	string clientSecret = "Enter client secret";
+	string privateKey = "Enter client Id";
+	string apiToken = "Enter client secret";
 	string secureUrl = "Enter secure Url";
 
-	ThreeDCartProvider provider = new ThreeDCartProvider(clientSecret, password, secureUrl);
+	ThreeDCartProvider provider = new ThreeDCartProvider(privateKey, apiToken, secureUrl);
 	provider.SearchOrders(DateTime.Now.AddDays(-1), DateTime.Now, "New");
 
 <br><br>
